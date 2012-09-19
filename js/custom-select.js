@@ -49,7 +49,7 @@
 
 
                 // If the plugin hasn't been initialized yet
-                var data = $this.data('customSelect');
+                var data = $.data($this, 'customSelect');
                 if ( ! data ) {
                     // new blank config object
                     var config = $.extend(defaults, options);
@@ -99,7 +99,8 @@
                     }
 
                     // plugin has been initialized
-                    $this.data('customSelect',{});
+                    $.data($this, 'customSelect',{});
+                    //TODO:: wtf?
                     $this.data('customSelect',$.extend($this.data('customSelect'), {
                         target : $this,
                         customSelect : customSelect,
@@ -189,7 +190,7 @@
         destroy : function(  ) {
             return this.each(function(){
                 var $this = $(this);
-                var data = $this.data('customSelect');
+                var data = $.data($this, 'customSelect');
                 var customSelectContainer = $this.closest('.'+data.config.customSelectContainerClass);
                 customSelectContainer.find('.'+data.config.customSelectListContainerClass).unbind('.customSelect');
                 $this.unbind('.customSelect');
