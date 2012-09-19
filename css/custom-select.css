@@ -1,0 +1,80 @@
+
+
+.custom-select-container            { margin: 0; padding: 0; display: inline-block; vertical-align: top; *display: inline; zoom: 1; }
+.custom-select-default-container    { position: relative; overflow: hidden; }
+.custom-select-default-container .custom-select-default
+                                    { position: absolute; }
+
+
+.custom-select-ajax-loader          { height: 20px; min-width: 20px; background: url(../images/ajax-loader.gif) 50% 50% no-repeat; }
+
+
+/* options group */
+.custom-select-options-group        {  }
+.custom-select-options-group-header { padding: 3px 0 2px 0; font-size: 14px; font-style: italic; line-height: 16px; }
+.custom-select-options-group:first-child .custom-select-options-group-header { padding-top: 0; }
+
+dl.custom-select                    { height: 30px; margin: 2px; padding: 0; width: 250px; }
+dl.custom-select dt                 { height: 24px; overflow: hidden; position: relative; border: 1px solid #ccc;
+                                      cursor: pointer; padding: 3px 48px 3px 3px; margin: 0;
+                                      background-color: #e0e0e0; border-radius: 5px;
+          /* Safari 5.1, Chrome 10+ */background: -webkit-linear-gradient(top, #ffffff, #e0e0e0);
+                    /* Firefox 3.6+ */background: -moz-linear-gradient(top, #ffffff, #e0e0e0);
+                           /* IE 10 */background: -ms-linear-gradient(top, #ffffff, #e0e0e0);
+                    /* Opera 11.10+ */background: -o-linear-gradient(top, #ffffff, #e0e0e0) }
+.custom-select-title                { display: block; overflow: hidden; height: 24px; line-height: 24px; padding: 0 3px;
+                                      font-weight: bold; }
+.custom-select-expand               { position: absolute; top: 3px; right: 3px; display: block;height: 24px; width: 24px;
+                                      cursor: pointer; background: url(../images/custom-select-expand.png) 50% 50% no-repeat;
+                                      opacity: 0.6; }
+dl.custom-select dt:hover .custom-select-expand
+                                    { opacity: 1; }
+.custom-select-clear                { position: absolute; display: block; top: 50%; right: 30px; margin-top: -8px;
+                                      height: 16px; width: 16px; cursor: pointer; opacity: 0.5;
+                                      background: url(../images/custom-select-clear.png) 0 0 no-repeat; }
+dl.custom-select.disabled           {  }
+dl.custom-select.disabled dt        { cursor: default; }
+dl.custom-select.disabled dt:hover .custom-select-expand
+                                    { opacity: 0.6; cursor: default; }
+
+dl.custom-select.disabled  .custom-select-title
+                                    { opacity: 0.6 }
+dl.custom-select.disabled .custom-select-clear
+                                    { visibility: hidden; }
+.custom-select-clear:hover           { background-position: 1px 1px; }
+dl.custom-select dd                 { visibility: hidden; z-index: -1; margin:0; padding: 5px;  position: relative;
+                                      height: 1px; border: 1px solid #ccc; border-top: none;
+                                      background-color: #f0f0f0; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;  }
+dl.custom-select dd.show            { visibility: visible; z-index: 10000; height: auto; }
+.custom-select-filters-container    { padding: 4px 36px 4px 0px; position: relative; }
+.custom-select-multiple .custom-select-filters-container    { padding-right: 52px; }
+.custom-select-searchbox            { height: 18px; line-height: 18px; padding: 0 2px; margin: 2px; width: 100%; border: 1px; }
+.custom-select-search-button        { display: block; height: 24px; width: 24px; position: absolute; top: 2px; right: 0px;
+                                      background: url(../images/custom-select-search.png) 0 0 no-repeat; }
+.custom-select-show-selected        { position: absolute; top: 9px; right: 27px; }
+.custom-select-messages-container   { font-size: 10px; line-height: 12px; font-weight: bold; padding: 0px 2px; overflow: hidden; }
+.custom-select-messages-container cite
+                                    { font-weight: normal; font-size: 12px; }
+.custom-select-options-list-container
+                                    { margin: 0px; padding: 0px; max-height: 200px; overflow: auto; overflow-x: hidden; overflow-y: auto; }
+.custom-select-options-list         { margin: 0px; padding: 0px; list-style-type: none; }
+.custom-select-options-list li      { position: relative; }
+.custom-select-options-list label   { display: block; padding: 3px 3px 3px 20px; position: relative; cursor: pointer;
+                                      float: none; text-align: left; min-height: 18px; }
+.custom-select-options-list input   { position: absolute; top: 3px; left: 3px; }
+
+.custom-select-option-hidden        { overflow: hidden; visibility: hidden; height: 0px; }
+dl.custom-select .selected          { background-color: #e0e0e0;
+          /* Safari 5.1, Chrome 10+ */background: -webkit-linear-gradient(top, #ffffff, #e0e0e0);
+                    /* Firefox 3.6+ */background: -moz-linear-gradient(top, #ffffff, #e0e0e0);
+                           /* IE 10 */background: -ms-linear-gradient(top, #ffffff, #e0e0e0);
+                    /* Opera 11.10+ */background: -o-linear-gradient(top, #ffffff, #e0e0e0) }
+dl.custom-select li:hover            { background-color: #43ace8; }
+
+/* options group */
+.custom-select-options-group        {  }
+.custom-select-options-group-header { padding: 3px 0 2px 0; font-size: 14px; font-style: italic; line-height: 16px; }
+.custom-select-options-group:first-child .custom-select-options-group-header { padding-top: 0; }
+
+
+
